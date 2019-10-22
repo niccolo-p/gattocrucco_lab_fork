@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 import inspect
 import re
-from lab import *
+from .lab import *
 
 # *********************** UTILITIES *************************
 
@@ -312,7 +312,7 @@ class DataHolder(object):
 		if self.x.lims is None:
 			self._set_edges('x')
 		if self.y.lims is None:
-			self._set_edges('y')git
+			self._set_edges('y')
 		if self.pts is None:
 			self._getpts()
 		if not resid:
